@@ -1,11 +1,11 @@
 {
-  "name": "server",
+  "name": "mailer-server",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npx nodemon",
-    "start": "npm run build && node build/main",
+    "start": "node main.js",
     "build": "rimraf ./build && npx tsc"
   },
   "keywords": [],
@@ -29,6 +29,6 @@
     "@types/nodemailer": "^6.4.15",
     "nodemon": "^3.1.4",
     "tsx": "^4.19.0",
-    "typescript": "^5.6.2"
+    "typescript": "^5.6.3"
   }
 }
